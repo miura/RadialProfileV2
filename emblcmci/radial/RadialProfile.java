@@ -14,6 +14,9 @@ package emblcmci.radial;
 	- added a field value "Radius", just to check if the sampled radius are OK.
 	- added plotter method.
 	- librarization done
+
+	20111012 update: skips NaN pixels (with Thomas and Dirk)
+	 
    Kota Miura (miura@embl.de)
 */
 
@@ -152,9 +155,11 @@ public class RadialProfile {
 				//thisBin=thisBin-1;
 				//if (thisBin>nBins-1) thisBin=nBins-1;
 				if (thisBin<nBins) {
-					Accumulator[0][thisBin]=Accumulator[0][thisBin]+1;
-					Accumulator[1][thisBin]=Accumulator[1][thisBin]+ip.getPixelValue((int)i,(int)j);
-					Radius[(int) (i-xmin)][(int) (j-ymin)] = thisBin;
+					if (!Double.isNaN(imp.getProcessor().getPixelValue((int)i,(int)j))) {
+						Accumulator[0][thisBin]=Accumulator[0][thisBin]+1;
+						Accumulator[1][thisBin]=Accumulator[1][thisBin]+ip.getPixelValue((int)i,(int)j);
+						Radius[(int) (i-xmin)][(int) (j-ymin)] = thisBin;
+					}
 				}
  			}
 		}

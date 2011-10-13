@@ -6,7 +6,9 @@ imp = IJ.getImage();
 rp =  IJ.runPlugIn(imp, "Radial_ProfileV2", "x=100 y=100 radius=50 noplot");
 data = rp.getAccumulator();
 for (var i = 0; i<data[0].length; i++)
-	IJ.log(data[0][i] +": "+ data[1][i]);	
+	IJ.log(data[0][i] +": "+ data[1][i]);
+
+more examples, ask Kota
 */
 
 import ij.ImagePlus;
