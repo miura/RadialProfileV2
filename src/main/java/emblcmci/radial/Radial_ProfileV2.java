@@ -1,3 +1,5 @@
+package emblcmci.radial;
+
 /**@author Kota Miura (miura@embl.de)
  * radial profile analysis modified for use with scripting. 
 
