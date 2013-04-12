@@ -12,10 +12,10 @@
 	</parent>
 
 	<groupId>embl.cmci</groupId>
-	<artifactId>RadialProfile</artifactId>
+	<artifactId>Radial_Profile</artifactId>
 	<version>2.0.0</version>
 
-	<name>plugins/RadialProfile</name>
+	<name>plugins/Radial_Profile.jar</name>
   <description> Bug fixed version of Radial Profile. 
                 
   </description>
