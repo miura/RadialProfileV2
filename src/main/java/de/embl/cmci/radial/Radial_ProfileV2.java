@@ -1,4 +1,4 @@
-package emblcmci.radial;
+package de.embl.cmci.radial;
 
 /**@author Kota Miura (miura@embl.de)
  * radial profile analysis modified for use with scripting. 
@@ -13,10 +13,10 @@ for (var i = 0; i<data[0].length; i++)
 more examples, ask Kota
 */
 
+import de.embl.cmci.radial.*;
 import ij.ImagePlus;
 import ij.plugin.filter.PlugInFilter;
 import ij.process.ImageProcessor;
-import emblcmci.radial.*;
 
 public class Radial_ProfileV2 implements PlugInFilter {
 

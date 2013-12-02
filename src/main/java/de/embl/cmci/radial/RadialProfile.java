@@ -1,4 +1,4 @@
-package emblcmci.radial;
+package de.embl.cmci.radial;
 /** 
  	based on plugin http://imagej.nih.gov/ij/plugins/radial-profile.html
 	@author Kota Miura (miura@embl.de) April. 18-21, 2011

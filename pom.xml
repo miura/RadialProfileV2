@@ -11,7 +11,7 @@
 		<version>1.28</version>
 	</parent>
 
-	<groupId>embl.cmci</groupId>
+	<groupId>de.embl.cmci</groupId>
 	<artifactId>Radial_Profile</artifactId>
 	<version>2.0.0</version>
 
@@ -74,4 +74,11 @@
   </scm>
   -->
 
+  <organization>
+  	<name>CMCI, EMBL</name>
+  	<url>http://cmci.embl.de</url>
+  </organization>
+  <scm>
+  	<developerConnection>Kota Miura</developerConnection>
+  </scm>
 </project>
