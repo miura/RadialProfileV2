@@ -3,3 +3,4 @@ target/classes/*
 target/maven-archiver/*
 .externalToolBuilders/*
 /target
+*.DS_Store

@@ -32,8 +32,8 @@ public class RadialProfile {
 
 	ImagePlus imp;
 	boolean canceled=false;
-	double X0;
-	double Y0;
+	double X0 = 0.0;
+	double Y0 = 0.0;
 	double mR;
 	Rectangle rct;
 	int nBins=100;
@@ -59,6 +59,7 @@ public class RadialProfile {
 		mR = mr;
 		useCalibration = usecalib;
 		doPlot = doplot;
+    isScript = true;
 	}
 	//Depreciated
 	public void ArgumentParser(String arg){
